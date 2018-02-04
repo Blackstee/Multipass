@@ -7,10 +7,16 @@ html, body, .page {
   -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
-  color: #fff;
   overflow: hidden; 
 }
 
+body {
+  background-color: black;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: 100%;
+    z-index: -10000;    
+}
 * {
   font-family: 'open sans', 'lato', 'helvetica', sans-serif;
 }
@@ -19,24 +25,85 @@ html, body, .page {
   position: absolute;
 }
 
+
+h2{
+    color:white;
+}
 #p1 {
   left: 0;
+}
+
+.circle{
+    width: 300px;
+	height: 300px;
+    background: transparent; 
+    border: 7px solid white; 
+    margin-top: 10%;
+    margin-left: 25%;
+    padding: 15px; 
+    margin-bottom: 10px;
+    -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   border-radius: 50%;
+    text-align: center;
+    
+  
+}
+
+.scrollbar{
+    max-height : 500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+hr {
+    border: none;
+    background-color: white; /* Цвет линии */
+    color: white; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+
+h3{
+    color:white;
+    font-size: 150px;
+}
+
+.title{
+    font-size: 120px;
+}
+
+#menu{
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    padding-top: 15%;
+    bottom: 0;
+    
 }
 
 #p2, #p3, #p4, #p5 {
   left: 200%;
 }
 
-#p1 { background: darkslateblue; }
-#p2 { background: tomato; }
-#p3 { background: gold; }
-#p4 { background: deeppink; }
-#p5 { background: rebeccapurple; }
+#p1 { background: #9575CD;}
+#p2 { background: #42a5f5; }
+#p3 { background: #5c6bc0; }
+#p4 { background:  #9575CD; }
+#p5 { background: rgba(255, 255, 255, 0.2); }
 
 #t2:target #p2,
 #t3:target #p3,
 #t4:target #p4,
-#t5:target #p5 {
+#t5:target #p1 {
   transform: translateX(-190%);
   -webkit-transform: translateX(-190%);
   -moz-transform: translateX(-190%);
@@ -48,7 +115,7 @@ html, body, .page {
 #t3:target #p1,
 #t4:target #p1,
 #t5:target #p1{
-  background: black;
+  background: #eeeeee;
 }
 
 #t2:target #p1 .icon, 
@@ -59,8 +126,8 @@ html, body, .page {
 }
 
 .icon {
-  color: #fff;
-  font-size: 32px;
+  color: white;
+  font-size: 50px;
   display: block;
 }
 
@@ -76,10 +143,10 @@ ul .icon:hover {
 #t3:target ul .icon,
 #t4:target ul .icon,
 #t5:target ul .icon{
-  transform: scale(.6);
-  -webkit-transform: scale(.6);
-  -moz-transform: scale(.6);
-  -o-transform: scale(.6);
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -o-transform: scale(0.6);
   transition-delay: .25s;
 }
 
@@ -143,7 +210,7 @@ a {
 }
 
 .hint a:hover {
-  color: #FFF;
+  color: black;
 }
 
 .line-trough {
@@ -173,7 +240,7 @@ a {
 }
 
 .page#p1 .icon {
-  height: 220px;
+  height: 150px;
 }
 
 .page#p1 .icon {
