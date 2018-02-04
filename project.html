@@ -92,22 +92,28 @@
           <div class="page" id="p3">
               <section>
             <div class="container" style="padding-right:10%;" >
-                  
-                  <div class ="way" style="display:inline-block;">
-                    <form >
-		             <p><select name="way" id="way" class="colortext">
+                <form >
+                  <div class="row">
+                      <br>
+                      <div class="col-md-8">
+		             <select name="way" id="way" class="colortext">
                          <option disabled>Choose way</option>
                          <option value="datebetween">Between Dates</option>
                          <option value="binocular">Binocular</option>
                          <option value="notmatch">Doesn't match with word</option>
                          <option value="match">Match with word</option>
-                        </select></p>
-                       <p>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
 		                <input type="number" class="colortext" name="sit" id="sit" value ="34"/>
-                       </p>
-                      <input type="submit" class="btn btn-primary center-block" value="Search"/>
-                        </form>
+                       </div>
+                      
+                        <div class="col-md-12">
+                        <input type="submit" class="btn btn-warning btn-lg btn-block" value="Search"/>
+                      </div>
+                          
                     </div>
+                    </form>
                   <hr>
                 <div class="scrollbar">
                   <div class="row">
