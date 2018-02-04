@@ -24,6 +24,11 @@ body {
   padding-left:inherit;    
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
 #logbox {
     
   margin: 50px auto;
